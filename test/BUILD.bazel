@@ -39,7 +39,7 @@ cc_test (
         ],
     }),
     deps = [
-        "boost.chrono",
+        "@boost.chrono",
         "@boost.test"
     ]
 )
