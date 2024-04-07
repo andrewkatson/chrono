@@ -74,7 +74,6 @@ cc_library(
         "@boost.type_traits",
         "@boost.typeof",
         "@boost.utility",
-        "@boost.winapi",
     ]  + select({
         "@platforms//os:windows": [
             ":chrono_windows",
