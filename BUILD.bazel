@@ -57,7 +57,8 @@ cc_library(
         "include/**/*.hpp",
         "include/**/*.h",
     ], exclude = _POSIX_HDRS + _WINDOWS_HDRS + _MAC_HDRS),
-    srcs = glob(["src/**/*.cpp"]), 
+    srcs = glob(["src/**/*.cpp"]),
+    defines = ["BOOST_ALL_NO_LIB"],
     includes = ["include"],
     deps = [
         "@boost.assert",
